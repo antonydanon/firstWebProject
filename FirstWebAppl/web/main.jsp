@@ -1,10 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : 1 дек. 2021 г., 18:19:53
-    Author     : anton
---%>
-
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
@@ -24,6 +17,5 @@
         <form method="post">
             </br><input type = "submit" value = "OrderList"/>
         </form>    
-        
     </body>
 </html>
