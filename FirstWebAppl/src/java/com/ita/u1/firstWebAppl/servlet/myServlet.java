@@ -13,6 +13,8 @@ import javax.servlet.RequestDispatcher;
 import java.util.List;
 
 public class myServlet extends HttpServlet {
+    
+    static final String pathToJspPage = "/main.jsp";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -22,7 +24,7 @@ public class myServlet extends HttpServlet {
         List<Integer> list = reader.getList();
        
         request.setAttribute("LIST", list);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/main.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher(pathToJspPage);
         dispatcher.forward(request, response);   
     }
  
@@ -37,7 +39,7 @@ public class myServlet extends HttpServlet {
         list = sorter.sort(list);
         
         request.setAttribute("LIST", list);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/main.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher(pathToJspPage);
         dispatcher.forward(request, response); 
     }
 }

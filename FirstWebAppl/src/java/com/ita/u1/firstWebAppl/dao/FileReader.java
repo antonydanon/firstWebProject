@@ -8,27 +8,31 @@ public class FileReader implements Readable {
     
     @Override
     public List<Integer> getList(){
+        
+        final int carriageReturnSymbol = 13;
+        final int newLineSymbol = 10;
+        final String pathToFileWithNumbers = "C:\\Users\\anton\\Desktop\\firstWebProject\\FirstWebAppl\\src\\resources\\input.txt";
     
         List<Integer> list = new ArrayList<>();
     
-        int c = 0;
-        String s = "";
+        int symbol = 0;
+        String number = "";
 
-        try(FileInputStream fis = new FileInputStream("C:\\Users\\anton\\Desktop\\firstWebProject\\FirstWebAppl\\src\\resources\\input.txt");
-            InputStreamReader isr = new InputStreamReader(fis, "UTF-8")){
+        try(FileInputStream fileInputStream = new FileInputStream(pathToFileWithNumbers);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF-8")){
 
-            while((c = isr.read()) != -1){                    
-                if(c != 10 && c != 13) {
-                    s = s + (char)c;
+            while((symbol = inputStreamReader.read()) != -1){                    
+                if(symbol != newLineSymbol && symbol != carriageReturnSymbol) {
+                    number = number + (char)symbol;
                 }
             
-                if(c == 10) {
-                    list.add(Integer.parseInt(s));
-                    s = "";
+                if(symbol == newLineSymbol) {
+                    list.add(Integer.parseInt(number));
+                    number = "";
                 }
             }
         
-            list.add(Integer.parseInt(s));
+            list.add(Integer.parseInt(number));
 
         } catch (IOException e) {
             e.printStackTrace();

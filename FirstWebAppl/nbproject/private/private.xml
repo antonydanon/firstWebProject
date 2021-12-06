@@ -3,7 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/anton/Desktop/firstWebProject/FirstWebAppl/src/java/Logic/Logic.java</file>
+            <file>file:/C:/Users/anton/Desktop/firstWebProject/FirstWebAppl/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/anton/Desktop/firstWebProject/FirstWebAppl/web/main.jsp</file>
+            <file>file:/C:/Users/anton/Desktop/firstWebProject/FirstWebAppl/src/java/com/ita/u1/firstWebAppl/dao/Readable.java</file>
+            <file>file:/C:/Users/anton/Desktop/firstWebProject/FirstWebAppl/src/java/com/ita/u1/firstWebAppl/servlet/myServlet.java</file>
+            <file>file:/C:/Users/anton/Desktop/firstWebProject/FirstWebAppl/src/java/com/ita/u1/firstWebAppl/service/Sorter.java</file>
+            <file>file:/C:/Users/anton/Desktop/firstWebProject/FirstWebAppl/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/anton/Desktop/firstWebProject/FirstWebAppl/src/java/com/ita/u1/firstWebAppl/service/Sortable.java</file>
+            <file>file:/C:/Users/anton/Desktop/firstWebProject/FirstWebAppl/src/java/com/ita/u1/firstWebAppl/dao/FileReader.java</file>
         </group>
     </open-files>
 </project-private>
